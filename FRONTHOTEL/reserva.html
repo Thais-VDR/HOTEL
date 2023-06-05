@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/reserva.css">
+  <title>SANGALLO PALACE</title>
+</head>
+
+<body>
+  <nav class="navbar bg-success fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand">SANGALLO PALACE HOTEL</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header bg-success">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">SANGALLO PALACE HOTEL</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Opção
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="reserva.html">Reserva</a></li>
+                <li><a class="dropdown-item" href="quarto.html">Quartos</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <main>
+    <div class="container">
+      <h2 class="titulo">Reserva</h2>
+    </div>
+    <section class="container">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome do Cliente</th>
+            <th>Nº do quarto</th>
+            <th>check-in</th>
+            <th>check-out</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-reserva"></tbody>
+      </table>
+    </section>
+  </main>
+  <h2 class="adicionar">Adicionar Reserva</h2>
+  <div class="container-card">
+    <div class="row">
+      <div class="col-6">
+        <div class="card">
+          <div class="card-body">
+            <form id="reserva">
+              <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input class="form-control" type="text" name="nome_cliente" id="nomeInput" placeholder="Digite o seu nome">
+              </div>
+              <div class="form-group">
+                <label for="quarto">Nº do Quarto:</label>
+                <input class="form-control" type="text" name="numero_quarto" id="quartoInput" placeholder="Digite o Nº do quarto">
+              </div>
+              <div class="form-group">
+                <label for="check-in">check-in:</label>
+                <input class="form-control" name="check_in" type="date" id="checkinInput"
+                  placeholder="Digite o seu check-in">
+              </div>
+              <div class="form-group">
+                <label for="check-out">check-out:</label>
+                <input class="form-control" type="date" name="check_out" id="checkoutInput"
+                  placeholder="Digite o seu check-out">
+                <div class="form-group text-center">
+                  <br>
+                  <button type="submit" class="btn btn-success">Enviar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

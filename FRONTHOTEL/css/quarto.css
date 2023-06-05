@@ -1,0 +1,54 @@
+*{
+	box-sizing: border-box;
+ }
+
+body{
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	text-align: center;
+
+}
+section{
+	margin: 10px;
+	overflow: hidden;
+}
+table{
+	width: 100%;
+	margin-bottom : .5em;
+    table-layout: fixed;
+	text-align: center;
+
+}
+
+td, th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #363636;
+	text-align: center;
+}
+
+th{
+	font-weight: bold;
+	background-color: #198754;
+	text-align: center;
+}
+#titulo-form{
+	font-family: monospace ;
+	margin: 48px;
+}
+.titulo{
+	font-family: monospace ;
+	margin: 50px;
+}
+.adicionar{
+	font-family: monospace ;
+  margin: 30px;
+}
+
+.card{
+	justify-content: center;
+	margin: 2px;
+	left: 42%;
+	position: fixed;
+	
+}

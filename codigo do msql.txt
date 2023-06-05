@@ -1,0 +1,27 @@
+CODIGO DO MSQL:
+
+create database hotel;
+
+use hotel;
+
+create table quarto(
+id int auto_increment primary key not null,
+numero varchar(3) not null,
+tipo varchar(20) not null,
+disponivel tinyint(1)
+);
+
+INSERT INTO quarto (numero, tipo, disponivel )
+values ('01','solteiro','1');
+
+select * from quarto;
+
+create table reserva(
+id int auto_increment primary key not null,
+nome_cliente varchar(65) not null,
+numero_quarto varchar(3) not null,
+check_in date not null,
+check_out date not null
+);
+
+select * from reserva;
